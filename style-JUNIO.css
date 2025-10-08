@@ -7,7 +7,7 @@
         flex-direction:column;
         justify-content: center;
         border-radius: 5px;
-        height: 500px;
+        height: 450px;
         font-family: Arial, Helvetica, sans-serif;
 
 
@@ -30,6 +30,7 @@
         font-size: 1rem;
         width: 300px;
         border-radius: 5px;
+        margin-bottom:1rem;
 
     }
     h4{
@@ -43,5 +44,9 @@
         font-size:1rem;
         width: auto;
         height: 30px;
+        border-radius: 8px;
+        margin-left: 7rem;
+
+ 
 
     }
