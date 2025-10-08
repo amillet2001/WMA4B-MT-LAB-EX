@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    
+}
+
+section{
+    padding: 30px 10%;
+    box-sizing: border-box;
+}
+
+.Name{
+    align-items: center;
+    justify-items: center;
+    flex: auto;
+}
+
+.Name1{
+font-size: 30px;
+color: lightpink;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutMe{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+
+.Skills{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+
+.Contact{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center; 
+}
+
+footer{
+    background-color: gray;
+    color: aliceblue;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+}
