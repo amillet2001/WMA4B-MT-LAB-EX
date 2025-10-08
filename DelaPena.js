@@ -1,4 +1,3 @@
-
 alert("Welcome! Please fill out the signup form.");
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -11,5 +10,3 @@ document.addEventListener("DOMContentLoaded", function() {
     alert("Form submitted successfully!");
   });
 });
-
-
