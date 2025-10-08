@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #e0e0e0;
+    min-height: 100vh;
+}
+
+
+header {
+    background: rgba(95, 113, 117, 0.95);
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8b3333;
+    font-weight: 500;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+}
+
+h2 {
+    color: #086089;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    color: #1e0537;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill {
+    background: #666;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.project-card {
+    border: 2px solid #078a4b;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    color: #087f5b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #555;
+}
