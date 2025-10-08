@@ -1,0 +1,503 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- COLOR PALETTE AND VARIABLES --- */
+:root {
+    /* Dark Mode Defaults (Dramatic Aesthetic) */
+    --color-text-dark: #e0e0e0;             /* Light grey text */
+    --color-bg-start-dark: #120e29;         /* Deep indigo */
+    --color-bg-end-dark: #3a005d;           /* Rich violet */
+    --color-card-dark: #221a41;             /* Card background */
+    --color-border-dark: #5b2a8d;           /* Accent purple border */
+    --color-primary-accent-dark: #bb86fc;   /* Lighter purple for highlights */
+    --color-secondary-accent-dark: #03dac6; /* Teal accent */
+    --shadow-dark: 0 15px 40px rgba(0,0,0,0.4);
+
+    /* Light Mode (Bright & Airy) */
+    --color-text-light: #333333;            /* Dark grey text */
+    --color-bg-start-light: #e0f2f7;        /* Soft blue-grey */
+    --color-bg-end-light: #f7e0f2;          /* Soft pink */
+    --color-card-light: #ffffff;            /* White for cards */
+    --color-border-light: #c0d9e7;          /* Light blue-grey border */
+    --color-primary-accent-light: #6200ee;   /* Stronger purple for highlights */
+    --color-secondary-accent-light: #03dac6; /* Teal accent */
+    --shadow-light: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- BASE BODY STYLING --- */
+body {
+    font-family: 'Space Grotesk', sans-serif; 
+    line-height: 1.8;
+    color: var(--color-text-dark);
+    padding: 80px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Required for the pseudo-element */
+    z-index: 1; /* Ensure body content is above the pseudo-element background */
+    
+    /* Dynamic Gradient Background for Dark Mode */
+    background: linear-gradient(135deg, var(--color-bg-start-dark) 0%, var(--color-bg-end-dark) 100%);
+    background-size: 400% 400%; 
+    animation: gradientAnimation 15s ease infinite; 
+
+    /* Smooth theme transition */
+    transition: background-color 1s ease-in-out, color 1s ease-in-out; 
+}
+
+/* --- 3D BACKGROUND DESIGN: GLOWING GRID/STARDUST --- */
+body::before {
+    content: '';
+    position: fixed; /* Fixed position for a static background layer */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind the main content */
+    opacity: 0.3; /* Subtle transparency */
+    transition: opacity 1s ease-in-out;
+
+    /* Create the repeating pattern of small radial gradients */
+    background-image: 
+        radial-gradient(circle, var(--color-primary-accent-dark) 1px, transparent 1px),
+        radial-gradient(circle, var(--color-secondary-accent-dark) 1px, transparent 1px);
+    
+    /* Set the size and offsets for the grid pattern */
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px; 
+    
+    /* Optional: Add a subtle glow/blur to the dots */
+    filter: blur(0.5px);
+}
+
+/* Light Mode Background Reset */
+body.light-mode {
+    color: var(--color-text-light);
+    background: linear-gradient(135deg, var(--color-bg-start-light) 0%, var(--color-bg-end-light) 100%);
+    background-size: auto; 
+    animation: none;
+}
+/* Light Mode Background Design Adjustment */
+body.light-mode::before {
+    opacity: 0.1; /* Much lighter/fainter effect in light mode */
+    background-image: 
+        radial-gradient(circle, var(--color-primary-accent-light) 1px, transparent 1px),
+        radial-gradient(circle, var(--color-secondary-accent-light) 1px, transparent 1px);
+}
+
+/* Gradient Animation for subtle movement */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* --- HEADER, SECTION, IMAGE, AND INTERACTIVE STYLES (UNCHANGED) --- */
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.header h1 {
+    font-family: 'Major Mono Display', monospace; 
+    font-size: 5.5em;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: var(--color-primary-accent-dark);
+    text-shadow: 0 0 15px rgba(187, 134, 252, 0.4), 0 0 30px rgba(187, 134, 252, 0.2);
+    transition: color 1s ease-in-out, text-shadow 1s ease-in-out;
+}
+
+.header .title-role {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--color-secondary-accent-dark);
+    letter-spacing: 2px;
+    transition: color 1s ease-in-out;
+}
+
+/* Light Mode Header */
+body.light-mode .header h1 {
+    color: var(--color-primary-accent-light);
+    text-shadow: none;
+}
+body.light-mode .header .title-role {
+    color: var(--color-secondary-accent-light);
+}
+
+
+/* --- SECTION STYLING (FLOATING CARDS) --- */
+.section {
+    background-color: var(--color-card-dark);
+    border-radius: 18px;
+    padding: 45px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-dark); 
+    transition: background-color 1s ease-in-out, color 1s ease-in-out, box-shadow 0.4s ease, transform 0.3s ease;
+    border: 1px solid var(--color-border-dark);
+    position: relative; /* Ensure content is above the pseudo-background */
+    z-index: 2;
+}
+
+.section:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 25px 55px rgba(0,0,0,0.6);
+}
+
+/* Light Mode Section */
+body.light-mode .section {
+    background-color: var(--color-card-light);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-border-light);
+    box-shadow: var(--shadow-light);
+}
+body.light-mode .section:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.8em; 
+    font-weight: 700; 
+    margin-bottom: 30px;
+    color: var(--color-primary-accent-dark);
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--color-secondary-accent-dark); 
+    transition: color 1s ease-in-out, border-color 1s ease-in-out;
+}
+
+/* Light Mode Section Heading */
+body.light-mode .section h2 {
+    color: var(--color-primary-accent-light);
+    border-bottom-color: var(--color-secondary-accent-light);
+}
+
+.section p {
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    max-width: 800px;
+}
+
+/* --- ABOUT SECTION & IMAGE LAYOUT (LEFT ALIGNED) --- */
+.about-content {
+    display: flex;
+    gap: 40px; 
+    align-items: flex-start;
+    flex-direction: row-reverse; /* Places the image (second in HTML) on the left */
+}
+
+.about-text {
+    flex: 2; 
+    min-width: 0;
+    order: 2; 
+}
+
+.about-image-container {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start; /* Aligns image to the left */
+    padding-top: 10px; 
+    order: 1; 
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    
+    /* Aesthetic Styling for Dark Theme */
+    border: 3px solid var(--color-primary-accent-dark);
+    box-shadow: 0 5px 20px rgba(187, 134, 252, 0.4); 
+    transition: all 0.5s ease-in-out;
+}
+
+/* Light Mode Image Adjustment */
+body.light-mode .profile-image {
+    border: 3px solid var(--color-primary-accent-light);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- LINKS STYLING --- */
+a {
+    color: var(--color-secondary-accent-dark);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after { /* Underline effect */
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-primary-accent-dark);
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:hover {
+    color: var(--color-primary-accent-dark);
+}
+
+/* Light Mode Links */
+body.light-mode a {
+    color: var(--color-secondary-accent-light);
+}
+body.light-mode a:hover {
+    color: var(--color-primary-accent-light);
+}
+body.light-mode a::after {
+    background-color: var(--color-primary-accent-light);
+}
+
+/* --- SKILLS LIST STYLING --- */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.skill-tag {
+    background-color: rgba(var(--color-primary-accent-dark), 0.1); 
+    border: 1px solid var(--color-border-dark);
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color-primary-accent-dark);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--color-primary-accent-dark);
+    color: var(--color-text-dark); 
+    transform: translateY(-4px) scale(1.05);
+    border-color: var(--color-primary-accent-dark);
+}
+
+/* Light Mode Skill Tag */
+body.light-mode .skill-tag {
+    background-color: rgba(var(--color-primary-accent-light), 0.1);
+    border-color: var(--color-border-light);
+    color: var(--color-primary-accent-light);
+}
+
+body.light-mode .skill-tag:hover {
+    background-color: var(--color-primary-accent-light);
+    color: var(--color-text-light);
+    border-color: var(--color-primary-accent-light);
+}
+
+/* --- PROJECTS GALLERY (THUMBNAIL HOVER EFFECT) --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: var(--color-card-dark);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-dark);
+    border: 1px solid var(--color-border-dark);
+    transition: all 0.3s ease;
+    position: relative;
+    text-decoration: none; 
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+.project-card:hover .project-thumbnail {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.project-info {
+    padding: 25px;
+    color: var(--color-text-dark);
+}
+
+.project-info h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-primary-accent-dark);
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-info h3 {
+    color: var(--color-secondary-accent-dark);
+}
+
+.project-info p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Light Mode Project Card */
+body.light-mode .project-card {
+    background-color: var(--color-card-light);
+    border-color: var(--color-border-light);
+    box-shadow: var(--shadow-light);
+}
+body.light-mode .project-card:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+body.light-mode .project-info {
+    color: var(--color-text-light);
+}
+body.light-mode .project-info h3 {
+    color: var(--color-primary-accent-light);
+}
+body.light-mode .project-card:hover .project-info h3 {
+    color: var(--color-secondary-accent-light);
+}
+
+
+/* --- THEME TOGGLE BUTTON STYLING --- */
+.theme-toggle-container {
+    text-align: center;
+    margin-top: 50px;
+    position: sticky; 
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    z-index: 100; 
+}
+
+.theme-button {
+    background: linear-gradient(45deg, var(--color-primary-accent-dark), var(--color-secondary-accent-dark));
+    color: var(--color-text-dark); 
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    border-radius: 40px; 
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+    letter-spacing: 1px;
+}
+
+.theme-button:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+    opacity: 0.95;
+}
+
+/* Light Mode Button Styling */
+body.light-mode .theme-button {
+    background: linear-gradient(45deg, var(--color-primary-accent-light), var(--color-secondary-accent-light));
+    color: var(--color-text-light); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+body.light-mode .theme-button:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 992px) {
+    .header h1 {
+        font-size: 4.5em;
+    }
+    .section h2 {
+        font-size: 2.2em;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    /* Image Stacking for About Section */
+    .about-content {
+        flex-direction: column; 
+        gap: 30px;
+    }
+    
+    .about-image-container {
+        justify-content: center; 
+        order: -1; /* Puts the image *above* the text on mobile */
+    }
+    
+    .profile-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 50px 20px;
+    }
+    .header h1 {
+        font-size: 3.5em;
+        letter-spacing: 3px;
+    }
+    .section {
+        padding: 30px;
+    }
+    .project-thumbnail {
+        height: 180px;
+    }
+    .theme-button {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 15px;
+    }
+    .header h1 {
+        font-size: 2.8em;
+    }
+    .section h2 {
+        font-size: 1.8em;
+    }
+    .skill-tag {
+        font-size: 0.9em;
+    }
+    .project-thumbnail {
+        height: 150px;
+    }
+}
