@@ -50,3 +50,10 @@ button:hover[id="mode"]{
     color: rgb(13, 13, 13);
     cursor: pointer;
 }
+body.dark-mode{
+    background-color: rgb(49, 47, 47);
+}
+body.dark-mode form{
+    background-color: rgb(204, 202, 200);
+    color: rgb(0, 0, 0);
+}
