@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(204, 202, 200);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+form{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border: 5px solid rgb(49, 47, 47);
+    border-radius: 15px;
+    display: center; 
+}
+input[type="name"],
+input[type="email"],
+input[type="password"], 
+input[type="confirmpassword"] {
+    width: 200px;
+    padding: 10px;
+    border: 5px solid rgb(49, 47, 47);
+    border-radius: 15px;
+   
+
+}
+button{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 5px solid rgb(49, 47, 47);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    
+}
+button:hover{
+    background-color: rgb(49, 47, 47);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+button[id="mode"]{
+    background-color: rgb(49, 47, 47);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 5px solid rgb(49, 47, 47);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+button:hover[id="mode"]{
+     background-color: rgb(251, 251, 251);
+    color: rgb(13, 13, 13);
+    cursor: pointer;
+}
