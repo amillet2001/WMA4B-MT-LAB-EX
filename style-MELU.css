@@ -52,3 +52,19 @@ li{
     font-size: larger;
     padding:20px;
 }
+
+.call_to_action_container{
+    text-align: center;
+    margin-top:30px;
+    height: 50px;
+}
+
+.cta_button{
+    background-color: aqua;
+    height: 80%;
+}
+
+
+.project {
+    text-align: center;
+}
