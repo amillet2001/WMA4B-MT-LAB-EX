@@ -1,0 +1,47 @@
+    .signup {
+        background-color: rgb(91, 187, 36);
+        width: 500px;
+        margin-top: 3rem;
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        border-radius: 5px;
+        height: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+    img {
+         width:400px;
+         height:250px;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  #ffffff;
+    }
+
+    input {
+        height: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        width: 300px;
+        border-radius: 5px;
+
+    }
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 1rem;
+    }
+
+    .signupbtn {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size:1rem;
+        width: auto;
+        height: 30px;
+
+    }
