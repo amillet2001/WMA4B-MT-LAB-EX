@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIDTERM WMA4B</title>
-    <h1>Sign Up Page</h1>
+    <h1 class="Head">Sign Up Page</h1>
+    <link rel="stylesheet" href="style-DELACRUZ.css">
 </head>
 <body>
-    <div class="fullname">
-    <label for="fullname">Full Name:</label>
-    </div>
+    
+    <div class="Details">
 
-    <div class="Email">
-    <label for="Email">Email:</label>
-    </div>
+        <div class="fullname">
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" placeholder="Full Name">
+        </div>
 
-    <div class="Password"> 
-    <label for="Password">Password:</label>
-    </div>
+        <div class="Email">
+    <label for="Email">Email:</label><br>
+    <input type="text" placeholder="Email">
+        </div>
 
-    <div class="CPassword">
-        <label for="CPassword">Confirm Password:</label>
-    </div>
+        <div class="Password"> 
+    <label for="Password">Password:</label><br>
+    <input type="password" name="Password" placeholder="Password">
+        </div>
+
+        <div class="CPassword">
+    <label for="CPassword">Confirm Password:</label><br>
+    <input type="password" name="Confirm Password" placeholder="Confirm Password">
+        </div>
+
+        <div class="Button"><br>
+    <button onclick="showAlert()">Submit</button>
+        </div>
 
     <div class="Button">
         <button onclick="showAlert()">Submit</button>
@@ -29,4 +41,5 @@
     </div>
     
 </body>
+
 </html>

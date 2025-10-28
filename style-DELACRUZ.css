@@ -1,52 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: lightblue;
-    
+body {
+    background-color:antiquewhite;
+
 }
 
-section{
-    padding: 30px 10%;
-    box-sizing: border-box;
-}
-
-.Name{
-    align-items: center;
-    justify-items: center;
-    flex: auto;
-}
-
-.Name1{
-font-size: 30px;
-color: lightpink;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.AboutMe{
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: center;
-}
-
-.Skills{
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: center;
-}
-
-.Contact{
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: center; 
-}
-
-footer{
-    background-color: gray;
-    color: aliceblue;
-    font-size: 10px;
-    align-items: center;
+.Head {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}   
+
+.Details {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
 }
-ul{
-    list-style-type: none;
-}
+
+
