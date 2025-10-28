@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup — Basic Form</title>
+  <link rel="stylesheet" href="DelaPena.css">
+
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Create your account</h1>
+
+    <form id="signupForm" novalidate>
+      <div class="row">
+        <label for="fullname">Full name</label>
+        <input id="fullname" name="fullname" type="text" inputmode="text" required>
+        <div id="fullnameErr" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" inputmode="email" required>
+        <div id="emailErr" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="row pw-row">
+        <div style="flex:1">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required>
+          <div id="passwordErr" class="error" aria-live="polite"></div>
+        </div>
+        <button type="button" id="togglePw" class="toggle" aria-pressed="false" title="Show / hide passwords">Show</button>
+      </div>
+
+      <div class="row">
+        <label for="confirm">Confirm password</label>
+        <input id="confirm" name="confirm" type="password" required>
+        <div id="confirmErr" class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="row actions">
+        <button id="submitBtn" type="submit">Sign up</button>
+      </div>
+
+      <div id="formMessage" role="status" aria-live="polite" style="margin-top:12px"></div>
+    </form>
+  </main>
+
+  <script defer src="DelaPena.js"></script>
+ </body>
+ </html>
+ 
