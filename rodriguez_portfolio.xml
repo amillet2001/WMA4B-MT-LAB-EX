@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <info>
+        <first_name>Lance Andrei</first_name>
+        <middle_name>Lopez</middle_name>
+        <last_name>Rodriguez</last_name>
+        <age>22</age>
+        <year>4th</year>
+        <section>B</section>
+        <course>Bachelor of Science in Information Technology</course>
+        <specialization>Web and Mobile Application</specialization>
+        <id>2022300707</id>
+    </info>
+    <education>
+        <elementary>
+            <school>Lawy Elementary School</school>
+            <year>2010 - 2015</year>
+        </elementary>
+        <junior_high>
+            <school>Dominican College of Tarlac</school>
+            <year>2016 - 2019</year>
+        </junior_high>
+        <senior_high>
+            <school>Dominican College of Tarlac</school>
+            <course>Information and Communications Technology</course>
+            <year>2020 - 2021</year>
+        </senior_high>
+        <college>
+            <school>Tarlac State University</school>
+            <course>Bachelor in Science in Information Techonology</course>
+            <year>2021 - ongoing</year>
+        </college>
+    </education>
+</student>
