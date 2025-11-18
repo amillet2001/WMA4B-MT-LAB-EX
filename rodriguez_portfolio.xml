@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rodriguez_transform.xsl"?>
 <student>
     <info>
         <first_name>Lance Andrei</first_name>
@@ -11,6 +12,33 @@
         <specialization>Web and Mobile Application</specialization>
         <id>2022300707</id>
     </info>
+
+    <info>
+        <skills>
+            <li>Programming</li>
+            <li>Basic Networking</li>
+            <li>Graphics Designer</li>
+            <li>Web Development</li>
+            <li>Linux</li>
+        </skills>
+        <p_language>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>Bash Scripting</li>
+            <li>C++</li>
+        </p_language>
+        <tools>
+            <li>Visual Studio Code/VSCodium</li>
+            <li>Figma</li>
+            <li>Inkscape</li>
+            <li>Neovim</li>
+            <li>Vim</li>
+            <li>Git</li>
+            <li>GitHub</li>
+        </tools>
+    </info>
+
     <education>
         <elementary>
             <school>Lawy Elementary School</school>
