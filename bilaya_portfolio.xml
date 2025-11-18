@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bilaya_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bilaya_schema.xsd">
+  <student>
+    <firstName>Antonio Miguel</firstName>
+    <middleName>Acosta</middleName>
+    <lastName>Bilaya</lastName>
+    <section> WMA 4B </section>
+    <email>bilayaantoniomiguel@gmail.com</email>
+    <phone>09635159774</phone>
+    <aboutMe>Passionate software engineering student with expertise in web technologies and data structuring. Experienced in XML-based solutions for portfolio management and document transformation.</aboutMe>
+    <skills>
+      <skill>HTML</skill>
+      <skill>CSS</skill>
+      <skill>JavaScript</skill>
+    </skills>
+    <education>
+      <degree>
+        <degreeType>Bachelor</degreeType>
+        <field>Information Technology</field>
+        <institution>University of Tarlac</institution>
+        <year>2025</year>
+      </degree>
+    </education>
+    <hobbies>
+      <hobby>Cooking</hobby>
+      <hobby>Gaming</hobby>
+      <hobby>Basketball</hobby>
+    </hobbies>
+  </student>
+</portfolio>

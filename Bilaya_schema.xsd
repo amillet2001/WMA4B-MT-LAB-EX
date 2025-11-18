@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="portfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="student" type="studentType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="studentType">
+    <xs:sequence>
+      <xs:element name="firstName" type="xs:string"/>
+      <xs:element name="middleName" type="xs:string"/>
+      <xs:element name="lastName" type="xs:string"/>
+      <xs:element name="email" type="xs:string"/>
+      <xs:element name="phone" type="xs:string"/>
+      <xs:element name="aboutMe" type="xs:string"/>
+      <xs:element name="skills">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="skill" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="education">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="degree" type="degreeType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="hobbies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="hobby" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="degreeType">
+    <xs:sequence>
+      <xs:element name="degreeType" type="xs:string"/>
+      <xs:element name="field" type="xs:string"/>
+      <xs:element name="institution" type="xs:string"/>
+      <xs:element name="year" type="xs:gYear"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="projectType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="technologies" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
