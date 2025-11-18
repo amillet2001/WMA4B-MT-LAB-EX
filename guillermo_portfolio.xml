@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="guillermo_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="guillermo_schema.xsd">
+  <metadata>
+    <title>Vince Patrick Infante Guillermo - Portfolio</title>
+    <description>Frontend Developer Portfolio - Aspiring Frontend Developer from Tarlac, Philippines</description>
+    <year>2025</year>
+  </metadata>
+
+  <personal>
+    <firstName>Vince Patrick</firstName>
+    <lastName>Guillermo</lastName>
+    <title>Aspiring Frontend Developer</title>
+    <tagline>Web development enthusiast crafting digital experiences at the intersection of design, technology, and user experience.</tagline>
+    <location>Brgy. Dolores Capas, Tarlac City, 2315</location>
+    <contact>
+      <email>vp.guillermo00583@student.tsu.edu.ph</email>
+      <phone>(+63) 951-322-4066</phone>
+    </contact>
+  </personal>
+
+  <education>
+    <degree>
+      <level>Bachelor of Science in Information Technology</level>
+      <specialization>Major in Web and Mobile Application</specialization>
+      <school>Tarlac State University</school>
+      <period>In Progress</period>
+    </degree>
+    <highSchool>
+      <school>Capas National High School</school>
+      <period>2016-2022</period>
+    </highSchool>
+    <elementary>
+      <school>Montesun Academy of Concepcion Inc.</school>
+      <period>2010-2016</period> 
+    </elementary>
+  </education>
+
+  <skills>
+    <technical>
+      <skill>HTML</skill>
+      <skill>CSS</skill>
+      <skill>JavaScript</skill>
+      <skill>React</skill>
+      <skill>Ionic Framework</skill>
+      <skill>Hardware Troubleshooting</skill>
+    </technical>
+  </skills>
+
+  <interests>
+    <interest>Web and Mobile Application Development</interest>
+    <interest>Graphic Design and Creative Media</interest>
+    <interest>Technology Trends and Innovation</interest>
+  </interests>
+
+  <social>
+    <link platform="GitHub" url="https://github.com/Vince-Front-Dev" label="View my projects on GitHub" />
+    <link platform="LinkedIn" url="https://www.linkedin.com/in/vince-patrick-guillermo-643932373/" label="Connect on LinkedIn" />
+    <link platform="Facebook" url="https://www.facebook.com/vincepatrickguillermo19" label="Follow on Facebook" />
+    <link platform="Instagram" url="https://www.instagram.com/vince_since19/" label="Follow on Instagram" />
+  </social>
+</portfolio>
