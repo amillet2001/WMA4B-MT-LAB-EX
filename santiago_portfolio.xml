@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="santiago_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="santiago_schema.xsd">
+  
+  <metadata>
+    <n>Elaika Joy Santiago</n>
+    <title>Creative Developer | Digital Artist</title>
+    <email>santiagoelaikajoy0405@gmail.com</email>
+    <social>
+      <linkedin>/santiago</linkedin>
+      <github>elaiikajoy</github>
+    </social>
+  </metadata>
+
+  <about>
+    <intro>Greetings! I am a passionate creative developer specializing in crafting immersive digital experiences. My work blends cutting-edge front-end technologies with a keen eye for dramatic aesthetics and intuitive user journeys. I thrive on transforming complex ideas into elegant, performant, and visually captivating web applications.</intro>
+    <description>With a background spanning React.js development, UI/UX principles, and digital artistry, I am adept at building projects that not only function flawlessly but also leave a lasting impression. Let's create something extraordinary together.</description>
+    <profileImage>325025889_541392617932435_5849789574854104995_n.jpg</profileImage>
+  </about>
+
+  <skillsSection>
+    <skill>React.js</skill>
+    <skill>Next.js</skill>
+    <skill>JavaScript (ES6+)</skill>
+    <skill>HTML5</skill>
+    <skill>CSS3 / SASS</skill>
+    <skill>Tailwind CSS</skill>
+    <skill>Git / GitHub</skill>
+    <skill>UI/UX Design</skill>
+    <skill>Node.js</skill>
+    <skill>MongoDB</skill>
+  </skillsSection>
+
+  <projectsSection>
+    <project id="proj_001">
+      <projectTitle>Dynamic Dashboard Pro</projectTitle>
+      <projectDescription>A comprehensive, responsive dashboard built with React and Redux, featuring real-time data visualization and user authentication.</projectDescription>
+      <projectImage>https://via.placeholder.com/400x200/4a3a6b/ffffff?text=Dashboard+UI</projectImage>
+      <projectLink>https://github.com/your-repo/dashboard</projectLink>
+    </project>
+    <project id="proj_002">
+      <projectTitle>E-commerce Platform X</projectTitle>
+      <projectDescription>Developed a scalable e-commerce application with a modern UI, Stripe integration, and a robust backend API.</projectDescription>
+      <projectImage>https://via.placeholder.com/400x200/4a3a6b/ffffff?text=E-commerce+UI</projectImage>
+      <projectLink>https://github.com/your-repo/ecommerce</projectLink>
+    </project>
+    <project id="proj_003">
+      <projectTitle>Creative Portfolio Generator</projectTitle>
+      <projectDescription>A tool to quickly generate personalized portfolios using various templates and customization options.</projectDescription>
+      <projectImage>https://via.placeholder.com/400x200/4a3a6b/ffffff?text=Portfolio+Builder</projectImage>
+      <projectLink>https://github.com/your-repo/portfolio-gen</projectLink>
+    </project>
+  </projectsSection>
+
+  <themeConfig>
+    <darkModeDefault>true</darkModeDefault>
+    <colorScheme>
+      <darkTheme>
+        <textColor>#e0e0e0</textColor>
+        <backgroundStartColor>#120e29</backgroundStartColor>
+        <backgroundEndColor>#3a005d</backgroundEndColor>
+        <cardBackgroundColor>#221a41</cardBackgroundColor>
+        <borderColor>#5b2a8d</borderColor>
+        <primaryAccentColor>#bb86fc</primaryAccentColor>
+        <secondaryAccentColor>#03dac6</secondaryAccentColor>
+      </darkTheme>
+      <lightTheme>
+        <textColor>#333333</textColor>
+        <backgroundStartColor>#e0f2f7</backgroundStartColor>
+        <backgroundEndColor>#f7e0f2</backgroundEndColor>
+        <cardBackgroundColor>#ffffff</cardBackgroundColor>
+        <borderColor>#c0d9e7</borderColor>
+        <primaryAccentColor>#6200ee</primaryAccentColor>
+        <secondaryAccentColor>#03dac6</secondaryAccentColor>
+      </lightTheme>
+    </colorScheme>
+  </themeConfig>
+
+</portfolio>

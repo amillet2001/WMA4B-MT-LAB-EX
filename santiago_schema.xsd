@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <!-- Root Portfolio Element -->
+  <xs:element name="portfolio" type="PortfolioType"/>
+  
+  <!-- Portfolio Complex Type Definition -->
+  <xs:complexType name="PortfolioType">
+    <xs:sequence>
+      <xs:element name="metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="about" type="AboutType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="skillsSection" type="SkillsSectionType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="projectsSection" type="ProjectsSectionType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="themeConfig" type="ThemeConfigType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Metadata Complex Type -->
+  <xs:complexType name="MetadataType">
+    <xs:sequence>
+      <xs:element name="n" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="email" type="EmailType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="social" type="SocialType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Email Custom Type with Validation -->
+  <xs:simpleType name="EmailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^@]+@[^@]+\.[^@]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Social Complex Type -->
+  <xs:complexType name="SocialType">
+    <xs:sequence>
+      <xs:element name="linkedin" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="github" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- About Complex Type -->
+  <xs:complexType name="AboutType">
+    <xs:sequence>
+      <xs:element name="intro" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="profileImage" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Skills Section Complex Type -->
+  <xs:complexType name="SkillsSectionType">
+    <xs:sequence>
+      <xs:element name="skill" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Projects Section Complex Type -->
+  <xs:complexType name="ProjectsSectionType">
+    <xs:sequence>
+      <xs:element name="project" type="ProjectType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Individual Project Complex Type -->
+  <xs:complexType name="ProjectType">
+    <xs:sequence>
+      <xs:element name="projectTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="projectDescription" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="projectImage" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="projectLink" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="ProjectIdType" use="required"/>
+  </xs:complexType>
+
+  <!-- Project ID Custom Type -->
+  <xs:simpleType name="ProjectIdType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="proj_[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Theme Configuration Complex Type -->
+  <xs:complexType name="ThemeConfigType">
+    <xs:sequence>
+      <xs:element name="darkModeDefault" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="colorScheme" type="ColorSchemeType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Color Scheme Complex Type -->
+  <xs:complexType name="ColorSchemeType">
+    <xs:sequence>
+      <xs:element name="darkTheme" type="ThemeColorsType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="lightTheme" type="ThemeColorsType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Theme Colors Complex Type -->
+  <xs:complexType name="ThemeColorsType">
+    <xs:sequence>
+      <xs:element name="textColor" type="HexColorType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="backgroundStartColor" type="HexColorType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="backgroundEndColor" type="HexColorType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="cardBackgroundColor" type="HexColorType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="borderColor" type="HexColorType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="primaryAccentColor" type="HexColorType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="secondaryAccentColor" type="HexColorType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Hex Color Custom Type with Validation -->
+  <xs:simpleType name="HexColorType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="#[0-9A-Fa-f]{6}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
