@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pabustan_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="pabustan_schema.xsd">
+    <student>
+        <id>2022123456789</id>
+        <lastname>Pabustan</lastname>
+        <firstname>Mary Anne</firstname>
+        <course>BS Information Technology</course>
+        <yearlevel>4th yr</yearlevel>
+        <email>ahn.mweewi@gmail.com</email>
+    </student>
+    
+    <activity type="Laboratory">
+        <name>Laboratory Activity 2: XML Series</name>
+        <date>2025-11-18</date>
+        <description>Completed initial file creation and linking.</description>
+    </activity>
+    
+    <activity type="Capstone">
+        <name>Reflectify</name>
+        <date>2025-11-18</date>
+        <description>A Gamified LMS with Spaced Repetition Algorithm and Flashcard Automation using GPT-4o mini .</description>
+    </activity>
+    
+    <skill>
+        <name>Programming</name>
+        <details>Java, Python, JavaScript</details>
+    </skill>
+    
+    <skill>
+        <name>Web Technologies</name>
+        <details>HTML, CSS, XML, XSLT</details>
+    </skill>
+</portfolio>
