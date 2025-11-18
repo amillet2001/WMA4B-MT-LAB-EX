@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="esguerra_transform.xsl"?>
+
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="esguerra_schema.xsd">
+    <student>
+        <firstName>Adrian </firstName>
+        <lastName>Esguerra</lastName>
+        <email>aian.sgrr@gmail.com</email>
+        <phone>0910 642 2661</phone>
+        <program>BSIT Specialized in Web and Mobile Application</program>
+    </student>
+
+    <academicInfo>
+        <gpa>1.2848</gpa>
+        <academicYear>2025-2026</academicYear>
+        <semester>1st</semester>
+    </academicInfo>
+
+    <projects>
+        <project>
+            <projectTitle>Reflectify (Capstone Project)</projectTitle>
+            <description>A Gamified LMS with Spaced Repetition and Flashcard Automation to enhance learning and retention.</description>
+            <technologies>React, TypeScript, CSS, Firebase, Node.js</technologies>
+            <dateCompleted>November 2025</dateCompleted>
+            <projectURL>https://reflectifywebapp.web.app</projectURL>
+        </project>
+        <project>
+            <projectTitle>Culinaire</projectTitle>
+            <description>A recipe sharing platform where users can discover, share, and save their favorite recipes.</description>
+            <technologies>HTML, CSS, JavaScript</technologies>
+            <dateCompleted>December 2024</dateCompleted>
+            <projectURL>https://culinaire-a-recipe-sharing-platform.netlify.app/</projectURL>
+        </project>
+        <project>
+            <projectTitle>ChiNoms Events Place Management</projectTitle>
+            <description>Events place management with price calculation and events reservation.</description>
+            <technologies>Visual Basic (.NET)</technologies>
+            <dateCompleted>November 2025</dateCompleted>
+            <projectURL>VB.NET_Project_Hindi_po_naka_host_hehe</projectURL>
+        </project>
+    </projects>
+
+    <skills>
+        <skillCategory name="Web Development">
+            <skill level="Intermediate">HTML</skill>
+            <skill level="Intermediate">CSS</skill>
+            <skill level="Intermediate">JavaScript/TypeScript</skill>
+            <skill level="Intermediate">React</skill>
+        </skillCategory>
+        <skillCategory name="Backend &amp; Database">
+            <skill level="Beginner">PHP</skill>
+            <skill level="Beginner">MySQL</skill>
+            <skill level="Beginner">REST APIs</skill>
+        </skillCategory>
+        <skillCategory name="Version Control">
+            <skill level="Advanced">Git/GitHub</skill>
+        </skillCategory>
+    </skills>
+
+    <achievements>
+        <achievement>
+            <title>Consistent Dean's Lister</title>
+            <description>Maintained Dean's List status consistently since first year.</description>
+            <date>2022-present</date>
+        </achievement>
+        <achievement>
+            <title>DOST-SEI JLSS Scholarship</title>
+            <description>Awarded the Department of Science and Technology - Science Education Institute's Junior Level Science Scholarship.</description>
+            <date>2024</date>
+        </achievement>
+    </achievements>
+
+    <extracurricular>
+        <activity>
+            <activityName>TSU - ADS (Association of DOST Scholars)</activityName>
+            <role>Officer - Creatives Committee</role>
+            <duration>2023 - Present</duration>
+            <description>Contributing to the creative initiatives and visual communications of the Association of DOST Scholars at Tarlac State University.</description>
+        </activity>
+    </extracurricular>
+
+    <aboutMe>
+        <fact>I love cats and dogs! probably more than humans..</fact>
+        <fact>I have ADHD</fact>
+        <fact>I am a night owl</fact>
+    </aboutMe>
+</portfolio>
