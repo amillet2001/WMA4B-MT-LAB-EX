@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="portfolio" type="PortfolioType"/>
+
+    <xs:complexType name="PortfolioType">
+        <xs:sequence>
+            <xs:element name="personal_info" type="PersonalInfoType"/>
+            <xs:element name="section" type="SectionType" maxOccurs="unbounded"/>
+            <xs:element name="footer" type="FooterType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PersonalInfoType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="profile_picture_src" type="xs:string"/>
+            <xs:element name="location" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SectionType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="paragraph" type="xs:string"/>
+                <xs:element name="list" type="ListType"/>
+                <xs:element name="contact_details" type="ContactDetailsType"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ListType">
+        <xs:sequence>
+            <xs:element name="item" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ContactDetailsType">
+        <xs:sequence>
+            <xs:element name="detail" type="ContactDetailType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ContactDetailType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="xs:string" use="required"/>
+                <xs:attribute name="href" type="xs:string" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="FooterType">
+        <xs:sequence>
+            <xs:element name="copyright" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
