@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="delrosario_transform.xsl"?>
+
+<portfolio>
+    <student id="1">
+        <firstname>Joeshua Jhowne</firstname>
+        <lastname>Del Rosario</lastname>
+        <course>BSIT</course>
+        <year>4th Year</year>
+        <age>22</age>
+        <address>6th Street, Sitio L.I. Binauganan, Tarlac City</address>
+        <skills>
+            <skill>HTML</skill>
+            <skill>CSS</skill>
+            <skill>JavaScript</skill>
+            <skill>Git</skill>
+            <skill>Sports</skill>
+        </skills>
+        <education>
+            <item>BS Information Technology - Tarlac State University (2021-2025)</item>
+            <item>Senior High (STEM Strand) - Golden Olympus Colleges, Inc. (2019-2021)</item>
+            <item>Junior High - Our Lady Of Ransom, Catholic School (2015-2019)</item>
+            <item>Elementary - Sto. Cristo Integrated School (2009-2015)</item>
+            
+        </education>
+        <awards>
+            <award>Dean's Lister 2021-2024</award>
+        </awards>
+    </student>
+</portfolio>
