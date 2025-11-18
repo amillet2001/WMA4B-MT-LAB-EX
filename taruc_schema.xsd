@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="StudentType"/>
+                <xs:element name="courses" type="CoursesType"/>
+                <xs:element name="projects" type="ProjectsType"/>
+                <xs:element name="skills" type="SkillsType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="StudentType">
+        <xs:sequence>
+            <xs:element name="studentID" type="xs:string"/>
+            <xs:element name="name" type="NameType"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="major" type="xs:string"/>
+            <xs:element name="yearLevel" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <xs:complexType name="NameType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <xs:complexType name="CoursesType">
+        <xs:sequence>
+            <xs:element name="course" type="CourseType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CourseType">
+        <xs:sequence>
+            <xs:element name="courseName" type="xs:string"/>
+            <xs:element name="grade" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="courseCode" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+
+    <xs:complexType name="ProjectsType">
+        <xs:sequence>
+            <xs:element name="project" type="ProjectType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <xs:complexType name="ProjectType">
+        <xs:sequence>
+            <xs:element name="projectTitle" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="startDate" type="xs:string"/>
+            <xs:element name="endDate" type="xs:string"/>
+            <xs:element name="technologies" type="TechnologiesType"/>
+            <xs:element name="projectURL" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <xs:complexType name="TechnologiesType">
+        <xs:sequence>
+            <xs:element name="technology" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <xs:complexType name="SkillsType">
+        <xs:sequence>
+            <xs:element name="skill" type="SkillType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <xs:complexType name="SkillType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="level" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+</xs:schema>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="taruc_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="taruc_schema.xsd">
+    
+   <student>
+        <studentID>2022300581</studentID>
+        <name>
+            <firstName>Jomari</firstName>
+            <lastName>Taruc</lastName>
+        </name>
+        <email>j.taruc00581@student.tsu.edu.ph</email>
+        <major>Information Technology</major>
+        <yearLevel>4th Year</yearLevel>
+    </student>
+    
+    <courses>
+        <course courseCode="IPT 2">
+            <courseName>Integrative Programming Technologies 2</courseName>
+            <grade>1.50</grade>   
+        </course>
+
+        <course courseCode="WMA 4">
+            <courseName>Advanced Web Development</courseName>
+            <grade>2.25</grade>
+        </course>
+
+        <course courseCode="WMA 3">
+            <courseName>Mobile Application Develeopment</courseName>
+            <grade>1.50</grade>
+        </course>
+    </courses>
+    
+    <projects>
+        <project>
+            <projectTitle>Capstone Project</projectTitle>
+            <description>Built an UI in mobile-app using Ionic for our Capstone </description>
+            <startDate>06-12-2025</startDate>
+            <endDate>11-18-2025</endDate>
+            <technologies>
+                <technology>React</technology>
+                <technology>Ionic</technology>
+                <technology>Capacitor.js</technology>
+            </technologies>
+            <projectURL>https://github.com/JMater22/SyncRunize.git</projectURL>
+        </project>
+    </projects>
+    
+    <skills>
+            <skill level="Begginner">JavaScript</skill>
+            <skill level="Begginner">HTML</skill>
+            <skill level="Begginner">CSS</skill>
+            <skill level="Begginner">Ionic</skill>
+            <skill level="Begginner">React</skill>
+    </skills>
+
+</portfolio>
