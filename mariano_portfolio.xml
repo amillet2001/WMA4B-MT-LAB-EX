@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="mariano_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="mariano_schema.xsd">
+    
+  <home>
+    <hero>
+      <image src="../../../img/simon.png" alt="Profile Picture"/>
+      <name> Simon Jay N. Mariano</name>
+      <description> Aspiring Developer | Lover Boy | Commited</description>
+    </hero>
+  </home>
+  <about>
+    <content>Hello! I am Simon Jay Mariano, 20 years old, passionate about technology, coding, and networking. I enjoy working on web development, gaming, and exploring creative projects. My goal is to grow as a developer and contribute to meaningful software solutions.</content>
+  </about>
+  <resume>
+    <educationalBackground>
+      <ul>
+        <li>Victoria East Elementary School (2010 – 2016)</li>
+        <li>Victoria National High School (2016 – 2020)</li>
+        <li>Victoria National High School (2020 – 2022)</li>
+      </ul>
+    </educationalBackground>
+    <skillsAndHobbies>
+      <title>Skills &amp; Hobbies</title>
+      <ul>
+        <li>Singing</li>
+        <li>Gaming</li>
+        <li>Reading Manga/Manhwa/Manhua</li>
+        <li>Cycling</li>
+        <li>Calisthenics</li>
+        <li>Coding</li>
+        <li>Networking (CCNA 1 and 2 Certified)</li>
+      </ul>
+    </skillsAndHobbies>
+  </resume>
+</portfolio>
