@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lacson_transform.xsl"?>
+
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="lacson_schema.xsd">
+
+  <student>
+    <firstname>Aristotle</firstname>
+    <lastname>lacson</lastname>
+    <studentid>2023012345</studentid>
+    <course>BSIT - Web and Mobile</course>
+    <email>aristotle@example.com</email>
+    <phone>09771344838</phone>
+  </student>
+
+  <education>
+    <school>
+      <name>Tarlac State University</name>
+      <degree>Bachelor of Science in Information Technology</degree>
+      <year>2025</year>
+    </school>
+  </education>
+
+  <skills>
+    <skill>HTML</skill>
+    <skill>CSS</skill>
+    <skill>JavaScript</skill>
+    <skill>XML</skill>
+    <skill>Android</skill>
+  </skills>
+
+  <projects>
+    <project>
+      <title>VR Campus Tour</title>
+      <description>Mobile VR tour for TSU San Isidro.</description>
+      <year>2025</year>
+      <link>https://example.com/vr-tour</link>
+    </project>
+
+    <project>
+      <title>FarmSync</title>
+      <description>A farm management app with logs and tools.</description>
+      <year>2024</year>
+    </project>
+  </projects>
+
+  <awards>
+    <award>
+      <title>Dean's List</title>
+      <year>2021</year>
+    </award>
+  </awards>
+
+  <statement>
+    Passionate about web and mobile apps that solve real needs.
+  </statement>
+
+</portfolio>
