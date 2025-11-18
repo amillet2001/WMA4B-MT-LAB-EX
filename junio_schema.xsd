@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Root element -->
+    <xs:element name="portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="StudentType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- Student Type -->
+    <xs:complexType name="StudentType">
+        <xs:sequence>
+            <xs:element name="personalInfo" type="PersonalInfoType"/>
+            <xs:element name="education" type="EducationType"/>
+            <xs:element name="skills" type="SkillsType"/>
+            <xs:element name="projects" type="ProjectsType"/>
+            <xs:element name="interests" type="InterestsType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Personal Information Type -->
+    <xs:complexType name="PersonalInfoType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="studentID" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="phone" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Education Type -->
+    <xs:complexType name="EducationType">
+        <xs:sequence>
+            <xs:element name="institution" type="xs:string"/>
+            <xs:element name="program" type="xs:string"/>
+            <xs:element name="yearLevel" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Skills Type -->
+    <xs:complexType name="SkillsType">
+        <xs:sequence>
+            <xs:element name="skill" type="SkillType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="SkillType">
+        <xs:sequence>
+            <xs:element name="n" type="xs:string"/>
+            <xs:element name="proficiency" type="ProficiencyType"/>
+        </xs:sequence>
+        <xs:attribute name="category" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="ProficiencyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Beginner"/>
+            <xs:enumeration value="Intermediate"/>
+            <xs:enumeration value="Advanced"/>
+            <xs:enumeration value="Expert"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Projects Type -->
+    <xs:complexType name="ProjectsType">
+        <xs:sequence>
+            <xs:element name="project" type="ProjectType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="ProjectType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="technologies" type="xs:string"/>
+            <xs:element name="role" type="xs:string"/>
+            <xs:element name="status" type="xs:string"/>
+            <xs:element name="year" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <!-- Interests Type -->
+    <xs:complexType name="InterestsType">
+        <xs:sequence>
+            <xs:element name="interest" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
