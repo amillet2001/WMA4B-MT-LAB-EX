@@ -1,0 +1,22 @@
+.body
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.whole
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30%;
+    width: 30%;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+    color: yellow;
+    text-align: center;
+}

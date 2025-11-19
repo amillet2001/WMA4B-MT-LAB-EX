@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    background-color: grey;
+}
+
+form {
+    background-color: aqua;
+    border: 10%;
+    border-style: dashed;
+    padding: 2%;
+    color: black;
+}

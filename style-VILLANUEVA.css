@@ -1,0 +1,24 @@
+
+body {
+    background-color: rgb(171, 170, 170);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: center;
+    align-items: center;
+}
+.Dean{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutme{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.socials{
+    font-family: Arial, Helvetica, sans-serif;
+}

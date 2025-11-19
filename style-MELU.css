@@ -1,0 +1,70 @@
+.about_me_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: aliceblue;
+}
+
+#my_name {
+    color: aliceblue;
+
+}
+
+body{
+    background-color: #1c1c1c;
+    color: aliceblue;
+}
+
+.container {
+    background-color:  #1c1c1c;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Arial Black", sans-serif;
+}
+
+p, span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    background-color: #121212;
+    color: aliceblue;
+}
+
+.sub_container{
+    background-color: #2c2b2b;
+    flex-basis: 700px;
+}
+
+ul {
+    list-style-type:none ;
+    
+}
+li{
+    font-size: larger;
+    padding:20px;
+}
+
+.call_to_action_container{
+    text-align: center;
+    margin-top:30px;
+    height: 50px;
+}
+
+.cta_button{
+    background-color: aqua;
+    height: 80%;
+}
+
+
+.project {
+    text-align: center;
+}
