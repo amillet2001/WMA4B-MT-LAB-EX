@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Mendoza_Transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="Mendoza_schema.xsd">
+    
+  <home>
+    <hero>
+      <image src="Pictures/LukeIMG" alt="Profile Picture"/>
+      <name> Mendoza, Luke Reed Chard R.</name>
+      <description> Game Developer | The One That Got Away | YB</description>
+    </hero>
+  </home>
+  <about>
+    <content>Hello! I am Luke Reed Chard R. Mendoza, 22 years old, I am an aspiring game developer with a passion for creating interactive worlds and memorable player experiences. I am constantly learning new tools, experimenting with ideas, and sharpening my skills so I can build games that are both fun and meaningful.</content>
+  </about>
+  <resume>
+    <educationalBackground>
+      <ul>
+        <li>Gerona Institute (2010 – 2016)</li>
+        <li>Corazon C. Aquino High school (2016 – 2020)</li>
+        <li>Corazon C. Aquino High school (2020 – 2022)</li>
+      </ul>
+    </educationalBackground>
+    <skillsAndHobbies>
+      <title>Skills &amp; Hobbies</title>
+      <ul>
+        <li>Gaming</li>
+        <li>Watching Youtube videos</li>
+        <li>Gym</li>
+        <li>Eating</li>
+        <li>Exploring</li>
+        <li>2nd Option</li>
+      </ul>
+    </skillsAndHobbies>
+  </resume>
+</portfolio>
