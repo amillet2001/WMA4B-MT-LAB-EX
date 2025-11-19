@@ -1,64 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="sablan_portfolio.xsl"?>
-
-
-<portfolio>
 
     <personal_info>
-        <name>Janice Anne G. Vertucio</name>
+        <name>Myles Sablan</name>
         <title>Personal Portfolio &amp; Resume</title>
-        <profile_picture_src>ja.jpg.jpg</profile_picture_src>
-        <location>Magalang, Pampanga</location>
+        <location>Concepcion, Tarlac</location>
     </personal_info>
-
+    
     <section id="about">
         <title>About Me</title>
         <paragraph>
-            Greetings! My name is Janice Anne G. Vertucio. I currently live in Magalang, Pampanga.
-            I’m a passionate and creative individual who enjoys expressing myself in different ways
-            such as dancing, writing, and music. I believe in continuously learning, growing,
-            and appreciating the little things in life. I also love exploring myself like I always
-            love to try something new.
+            Hello! My name is Myles Sablan, 
+            and I currently reside in Concepcion, Tarlac. 
+            I am an attentive and creative individual with 
+            a natural ability to multitask efficiently. I 
+            thrive in dynamic environments, enjoy exploring 
+            new ideas, and bring both focus and imagination 
+            to everything I do. Curious and adaptable, I’m 
+            always eager to learn, grow, and make a positive impact.
         </paragraph>
     </section>
-
+    
     <section id="hobbies">
         <title>My Hobbies &amp; Interests</title>
         <list type="unordered">
-            <item>Dancing</item>
+            <item>Crafting</item>
             <item>Playing musical instruments</item>
-            <item>Watching or reading manga and manhwa</item>
-            <item>Cooking</item>
-            <item>Spending time with cats (my favorite pet!)</item>
-            <item>Practicing calligraphy writing</item>
+            <item>Watching movies</item>
+            <item>Gaming</item>
+            <item>Driving</item>
+            <item>Sports</item>
         </list>
     </section>
-
+    
     <section id="skills">
         <title>Skills</title>
         <list type="unordered">
-            <item>Creative Writing &amp; Calligraphy</item>
-            <item>Music &amp; Rhythm Appreciation</item>
-            <item>Cooking &amp; Experimenting with Recipes</item>
-            <item>Artistic Expression (Dance, Drawing, etc.)</item>
-            <item>Critical Thinking from Reading Manga/Manhwa</item>
+            <item>Creative &amp; Resourceful</item>
+            <item>Communication Skills</item>
+            <item>Problem Solving</item>
+            <item>Time Management</item>
+            <item>Critical Thinking</item>
         </list>
     </section>
-
+    
     <section id="contact">
         <title>Contact Me</title>
         <paragraph>If you’d like to connect with me, feel free to reach out:</paragraph>
         <contact_details>
-            <detail type="email" href="mailto:annevertucio80@gmail.com">annevertucio80@gmail.com</detail>
-            <detail type="location">Pampanga, Philippines</detail>
-            <detail type="phone">09987865432</detail>
+            <detail type="email" href="mailto:mylessablan@notexist.com">mylessablan12312@gmail.com</detail>
+            <detail type="location">Concepcion Tarlac, Philippines</detail>
+            <detail type="phone">0978-754-1254</detail>
         </contact_details>
     </section>
-
+    
     <footer>
         <copyright>
-            &#169; 2025 Janice Anne G. Vertucio | All Rights Reserved
+            &#169; 2025 Myles Sablan| All Rights Reserved
         </copyright>
     </footer>
-
+    
 </portfolio>
