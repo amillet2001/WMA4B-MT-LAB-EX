@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="canlas_transform.xsl"?>
+
+<portfolio>
+    <student id="1">
+        <firstname>Edren</firstname>
+        <lastname>Canlas</lastname>
+        <course>BSIT</course>
+        <year>4th Year</year>
+        <age>21</age>
+        <address>Sitio Maniknik, Armenia, Tarlac City</address>
+        <skills>
+            <skill>Sports</skill>
+        </skills>
+        <education>
+            <item>BS Information Technology - Tarlac State University (2021-2025)</item>
+            <item>Senior High (STEM Strand) - Capas National High School (2019-2021)</item>
+            <item>Junior High - Capas National School (2015-2019)</item>
+            <item>Elementary - Armenia Integrated School (2009-2015)</item>
+            
+        </education>
+    </student>
+</portfolio>
