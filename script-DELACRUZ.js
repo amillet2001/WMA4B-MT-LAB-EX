@@ -1,1 +1,0 @@
-window.onload = () => {alert("Welcome to my Sign up Form!")}
