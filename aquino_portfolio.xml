@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="aquino_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="aquino_schema.xsd">
+    
+  <home>
+    <hero>
+      <name>Neil Lawrence M. Aquino</name>
+      <description>Art Designer | Front End Developer</description>
+    </hero>
+  </home>
+  <about>
+    <content>Hello! I am Neil Lawrence M. Aquino, 21 years old, and I love to play games, a little bit of art design.</content>
+  </about>
+  <resume>
+    <educBackground>
+      <ul>
+        <li>Ecumenical Christian College(2010-2016)</li>
+        <li>Ecumenical Christian College(2016 – 2020)</li>
+        <li>Golden Olympus Colleges(2020 – 2022)</li>
+      </ul>
+    </educBackground>
+    <hobbies>
+      <title>Hobbies</title>
+      <ul>
+        <li>Gaming</li>
+        <li>Weightlifting</li>
+        <li>Coding</li>
+      </ul>
+    </hobbies>
+  </resume>
+</portfolio>

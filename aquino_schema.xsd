@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="portfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="home" type="homeType"/>
+        <xs:element name="about" type="aboutType"/>
+        <xs:element name="resume" type="resumeType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="homeType">
+    <xs:sequence>
+      <xs:element name="hero">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="image">
+              <xs:complexType>
+                <xs:attribute name="src" type="xs:string" use="required"/>
+                <xs:attribute name="alt" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="aboutType">
+    <xs:sequence>
+      <xs:element name="content" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="resumeType">
+    <xs:sequence>
+      <xs:element name="educationalBackground">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ul">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="li" type="xs:string" maxOccurs="unbounded"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="hobbies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="ul">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="li" type="xs:string" maxOccurs="unbounded"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
