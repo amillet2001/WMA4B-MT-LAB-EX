@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  
+  <xs:element name="StudentPortfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Student" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FullName" type="xs:string"/>
+              <xs:element name="StudentID" type="xs:string"/>
+              <xs:element name="Course" type="xs:string"/>
+              <xs:element name="Year" type="xs:positiveInteger"/>
+              <xs:element name="Birthday" type="xs:date"/>
+              <xs:element name="Sex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Male"/>
+                    <xs:enumeration value="Female"/>
+                    <xs:enumeration value="Other"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contact" type="xs:string" minOccurs="0"/>
+              <xs:element name="Email" type="xs:string" minOccurs="0"/>
+              <xs:element name="Address" type="xs:string" minOccurs="0"/>
+
+          
+              <xs:element name="Grades" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Grade" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Subject" type="xs:string"/>
+                          <xs:element name="Score" type="xs:decimal"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="Projects" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Project" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Title" type="xs:string"/>
+                          <xs:element name="Description" type="xs:string" minOccurs="0"/>
+                          <xs:element name="Year" type="xs:gYear" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            
+              <xs:element name="Achievements" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Achievement" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="Remarks" type="xs:string" minOccurs="0"/>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

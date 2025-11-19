@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="kurt_transform.xsl"?>
+<StudentPortfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="kurt_schema.xsd">
+  <Student>
+    <FullName>Kurt Rassel</FullName>
+    <StudentID>2025-00123</StudentID>
+    <Course>BS Information Technology</Course>
+    <Year>4</Year>
+    <Birthday>2003-07-12</Birthday>
+    <Sex>Male</Sex>
+    <Contact>+63-912-345-6789</Contact>
+    <Email>kurt.rassel@example.com</Email>
+    <Address>Tarlac City Province</Address>
+
+    <Grades>
+      <Grade>
+        <Subject>Database Systems</Subject>
+        <Score>91.00</Score>
+      </Grade>
+      <Grade>
+        <Subject>Web Development</Subject>
+        <Score>88.50</Score>
+      </Grade>
+      <Grade>
+        <Subject>Software Engineering</Subject>
+        <Score>92.25</Score>
+      </Grade>
+    </Grades>
+
+    <Projects>
+      <Project>
+        <Title>Car Rental Management System</Title>
+        <Description>Desktop app in VB.NET for Wheels 4 Rent — records, rentals, billing.</Description>
+        <Year>2024</Year>
+      </Project>
+      <Project>
+        <Title>Student Portfolio (XML/XSL)</Title>
+        <Description>Portfolio transformed with XSL into HTML; validated with XSD.</Description>
+        <Year>2025</Year>
+      </Project>
+    </Projects>
+
+    <Achievements>
+      <Achievement>Dean's Lister — 2nd Sem 2024</Achievement>
+      <Achievement>Best In Case Study In My Third Year College Year</Achievement>
+    </Achievements>
+
+    <Remarks>My intership is in 2027.</Remarks>
+  </Student>
+
+</StudentPortfolio>
+
