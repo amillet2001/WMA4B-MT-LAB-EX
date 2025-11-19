@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ramos_transform.xsl"?>
+
+<studentProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ramos_schema.xsd">
+
+    <info>
+        <fullName>Catherine T. Ramos</fullName>
+        <course>BS Information Technology</course>
+    </info>
+
+    <profileSummary>
+        I'm a dedicated student passionate about programming, system
+        analysis, and user-centered digital solutions. My
+        projects focus on efficient workflows and structured
+        documentation for real-world systems.
+    </profileSummary>
+
+    <academicBackground>
+        <school level="College">
+            <institution>Tarlac State University</institution>
+            <year>2022–Present</year>
+        </school>
+
+        <school level="Senior High">
+            <institution>Capas National High School School</institution>
+            <year>2020–2022</year>
+        </school>
+    </academicBackground>
+
+    <competencies>
+        <skill category="Technical">HTML</skill>
+        <skill category="Technical">CSS</skill>
+        <skill category="Technical">Javascript</skill>
+
+        <skill category="Soft Skill">Analytical Thinking</skill>
+        <skill category="Soft Skill">Team Collaboration</skill>
+    </competencies>
+
+    <projects>
+        <project>
+            <title>Gourmet Discoveries</title>
+            <tools>HTML, CSS and JS</tools>
+            <summary>Designed for cooking.</summary>
+        </project>
+    </projects>
+
+    <reachMe>
+        <email>ramoscath12@gmail.com</email>
+        <phone>+63 936 569 2493</phone>
+    </reachMe>
+
+</studentProfile>
