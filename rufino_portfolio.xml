@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rufino_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="rufino_schema.xsd">
+
+    <student>
+        <name>Lorelyn Marie S. Rufino</name>
+        <course>BSIT-WMA</course>
+        <year>4th year</year>
+        <skills>
+            <skill>HTML</skill>
+            <skill>CSS</skill>
+            <skill>Web designer</skill>
+        </skills>
+    </student>
+
+    <projects>
+        <project>
+            <title>My portfolio</title>
+            <description>Created a simple portfolio.</description>
+        </project>
+        <project>
+            <title>Portfolio Website</title>
+            <description>Designed a personal website using HTML and CSS.</description>
+        </project>
+    </projects>
+
+</portfolio>
