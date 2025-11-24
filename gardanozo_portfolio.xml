@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="gardanozo_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:noNamespaceSchemaLocation="gardanozo_schema.xsd">
+    <header>
+        <logo>Edralyn<span> Gardanozo</span></logo>
+        <navLinks>
+            <link href="#about">About</link>
+            <link href="#skills">Skills</link>
+            <link href="#projects">Projects</link>
+            <link href="#contact">Contact</link>
+        </navLinks>
+    </header>
+    <sections>
+        <section id="about">
+            <profilePic src="edralyn.jpg" alt="Profile Picture"/>
+            <text>
+                <heading>Edralyn Gardanozo</heading>
+                <paragraph>Hi! my name is Edralyn Gardanozo, I am a 4th year IT student. <br/> I love to design and create user-friendly interfaces. I also like to read, watch, cook and travel.</paragraph>
+            </text>
+        </section>
+        <section id="skills">
+            <heading>My Skills</heading>
+            <skillsGrid>
+                <skill>HTML</skill>
+                <skill>CSS</skill>
+                <skill>JavaScript</skill>
+                <skill>Python</skill>
+                <skill>Git / GitHub</skill>
+            </skillsGrid>
+        </section>
+        <section id="projects">
+            <heading>My Projects</heading>
+            <projectsGrid>
+                <project>
+                    <title>Gourmet Discoveries</title>
+                    <description>A web application that helps users discover different Filipino cuisines.</description>
+                </project>
+                <project>
+                    <title>Calculator</title>
+                    <description>A clean and functional calculator built with HTML, CSS, and JavaScript.</description>
+                </project>
+            </projectsGrid>
+        </section>
+        <section id="contact">
+            <heading>Contact Me</heading>
+            <contactInfo>
+                <email href="mailto:edralyngardanozo999@gmail.com">edralyngardanozo999@gmail.com</email>
+                <github href="https://github.com/swttulip" target="_blank">github.com/swttulip</github>
+            </contactInfo>
+        </section>
+    </sections>
+    <footer>
+        <copyright>2025 ❤ Edralyn Gardanozo</copyright>
+    </footer>
+    <assets>
+        <stylesheet href="style-GARDANOZO.css"/>
+        <script src="script-GARDANOZO.js"/>
+    </assets>
+</portfolio>
