@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="delapena_transform.xsl"?>
+<studentPortfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="delapena_schema.xsd">
+    <student>
+        <bio>
+            <name>John Kristian DelaPena</name>
+            <studentID>202112345</studentID>
+            <course>BSIT</course>
+            <yearLevel>4th Year</yearLevel>
+        </bio>
+        <skills>
+            <skill>Web Development</skill>
+            <skill>Mobile App Development</skill>
+            <skill>Database Management</skill>
+        </skills>
+        <projects>
+            <project>
+                <title>TSU Campus Navigator – AR/VR App</title>
+                <description>Smart VR-integrated navigation app for TSU San Isidro campus.</description>
+            </project>
+        </projects>
+        <contact>
+            <email>jk.delapena00282@example.com</email>
+            <phone>09123456789</phone>
+        </contact>
+    </student>
+</studentPortfolio>
