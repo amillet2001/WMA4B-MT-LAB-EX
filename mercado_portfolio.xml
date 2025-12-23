@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="mercado_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="mercado_schema.xsd">
+    
+    <student>
+        <studentID>2022300243</studentID>
+        <personalInfo>
+            <firstName>Raennier Francis</firstName>
+            <middleName>Pacheco</middleName>
+            <lastName>Mercado</lastName>
+            <dateOfBirth>03/10/2004</dateOfBirth>
+            <gender>Male</gender>
+            <email>rf.mercado00243@student.tsu.edu.ph</email>
+            <phone>0992 809 1451</phone>
+            <address>
+                <street>Pulis Kalinga Village</street>
+                <city>Tarlac City</city>
+                <province>Tarlac</province>
+                <zipCode>2300</zipCode>
+                <country>Philippines</country>
+            </address>
+        </personalInfo>
+        
+        <academicInfo>
+            <program>Bachelor of Science in Information Technology</program>
+            <yearLevel>4</yearLevel>
+            <gpa>1.8</gpa>
+        </academicInfo>
+        
+        <skills>
+            <technicalSkills>
+                <skill level="Advanced">HTML</skill>
+                <skill level="Advanced">CSS</skill>
+                <skill level="Intermediate">JavaScript</skill>
+                <skill level="Intermediate">Ionic</skill>
+                <skill level="Beginner">SQL</skill>
+            </technicalSkills>
+            <softSkills>
+                <skill>Problem Solving</skill>
+                <skill>Team Collaboration</skill>
+                <skill>Communication</skill>
+                <skill>Time Management</skill>
+            </softSkills>
+        </skills>
+    </student>
+</portfolio>

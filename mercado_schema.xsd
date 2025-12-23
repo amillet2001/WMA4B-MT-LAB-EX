@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="studentType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="studentType">
+        <xs:sequence>
+            <xs:element name="studentID" type="xs:string"/>
+            <xs:element name="personalInfo" type="personalInfoType"/>
+            <xs:element name="academicInfo" type="academicInfoType"/>
+            <xs:element name="skills" type="skillsType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="personalInfoType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="middleName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="dateOfBirth" type="xs:string"/>
+            <xs:element name="gender" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="address" type="addressType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="province" type="xs:string"/>
+            <xs:element name="zipCode" type="xs:string"/>
+            <xs:element name="country" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="academicInfoType">
+        <xs:sequence>
+            <xs:element name="program" type="xs:string"/>
+            <xs:element name="yearLevel" type="xs:integer"/>
+            <xs:element name="gpa" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="skillsType">
+        <xs:sequence>
+            <xs:element name="technicalSkills" type="technicalSkillsType"/>
+            <xs:element name="softSkills" type="softSkillsType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="technicalSkillsType">
+        <xs:sequence>
+            <xs:element name="skill" type="technicalSkillType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="technicalSkillType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="level" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="softSkillsType">
+        <xs:sequence>
+            <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
