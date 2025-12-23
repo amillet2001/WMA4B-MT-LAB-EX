@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Root element -->
+    <xs:element name="portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personal_info">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="location" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="section" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:choice>
+                                <xs:element name="paragraph" type="xs:string"/>
+                                <xs:element name="list">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="item" type="xs:string" maxOccurs="unbounded"/>
+                                        </xs:sequence>
+                                        <xs:attribute name="type" type="xs:string" use="optional"/>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="contact_details">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="detail" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                    <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                            <xs:attribute name="type" type="xs:string" use="required"/>
+                                                            <xs:attribute name="href" type="xs:string" use="optional"/>
+                                                        </xs:extension>
+                                                    </xs:simpleContent>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="footer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="copyright" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <personal_info>
+        <name>Myles Sablan</name>
+        <title>Personal Portfolio &amp; Resume</title>
+        <location>Concepcion, Tarlac</location>
+    </personal_info>
+    
+    <section id="about">
+        <title>About Me</title>
+        <paragraph>
+            Hello! My name is Myles Sablan, 
+            and I currently reside in Concepcion, Tarlac. 
+            I am an attentive and creative individual with 
+            a natural ability to multitask efficiently. I 
+            thrive in dynamic environments, enjoy exploring 
+            new ideas, and bring both focus and imagination 
+            to everything I do. Curious and adaptable, I’m 
+            always eager to learn, grow, and make a positive impact.
+        </paragraph>
+    </section>
+    
+    <section id="hobbies">
+        <title>My Hobbies &amp; Interests</title>
+        <list type="unordered">
+            <item>Crafting</item>
+            <item>Playing musical instruments</item>
+            <item>Watching movies</item>
+            <item>Gaming</item>
+            <item>Driving</item>
+            <item>Sports</item>
+        </list>
+    </section>
+    
+    <section id="skills">
+        <title>Skills</title>
+        <list type="unordered">
+            <item>Creative &amp; Resourceful</item>
+            <item>Communication Skills</item>
+            <item>Problem Solving</item>
+            <item>Time Management</item>
+            <item>Critical Thinking</item>
+        </list>
+    </section>
+    
+    <section id="contact">
+        <title>Contact Me</title>
+        <paragraph>If you’d like to connect with me, feel free to reach out:</paragraph>
+        <contact_details>
+            <detail type="email" href="mailto:mylessablan@notexist.com">mylessablan12312@gmail.com</detail>
+            <detail type="location">Concepcion Tarlac, Philippines</detail>
+            <detail type="phone">0978-754-1254</detail>
+        </contact_details>
+    </section>
+    
+    <footer>
+        <copyright>
+            &#169; 2025 Myles Sablan| All Rights Reserved
+        </copyright>
+    </footer>
+    
+</portfolio>
