@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="valencia_transform.xsl"?>
+
+<StudentPortfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="valencia_schema.xsd">
+
+    <Student>
+        <LastName>Valencia</LastName>
+        <FirstName>John Lenard</FirstName>
+        <Course>BSIT</Course>
+        <YearLevel>4th Year</YearLevel>
+    </Student>
+
+    <Projects>
+        <Project>
+            <Title>Smart Tourist Mapping System</Title>
+            <Description>A mobile app that helps users view tourist spots using ESP32-based crowd estimation and weather updates.</Description>
+            <Year>2025</Year>
+        </Project>
+
+        <Project>
+            <Title>Motorcycle Inventory and Loaning System</Title>
+            <Description>A web system for managing motorcycle quotations, inventory, and loan applications.</Description>
+            <Year>2024</Year>
+        </Project>
+    </Projects>
+
+    <Skills>
+        <Skill>React Native</Skill>
+        <Skill>JavaScript</Skill>
+        <Skill>PHP</Skill>
+        <Skill>MySQL</Skill>
+    </Skills>
+
+</StudentPortfolio>

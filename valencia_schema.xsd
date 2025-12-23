@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="StudentPortfolio">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Student">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="LastName" type="xsd:string"/>
+                            <xsd:element name="FirstName" type="xsd:string"/>
+                            <xsd:element name="Course" type="xsd:string"/>
+                            <xsd:element name="YearLevel" type="xsd:integer"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="Projects">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Project" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Title" type="xsd:string"/>
+                                        <xsd:element name="Description" type="xsd:string"/>
+                                        <xsd:element name="Year" type="xsd:gYear"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="Skills">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Skill" type="xsd:string" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
