@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="villavicencio_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="villavicencio_schema.xsd">
+    <personal>
+        <name>Kim Francis Villavicencio</name>
+        <firstname>Kim Francis</firstname>
+        <lastname>Villavicencio</lastname>
+        <title>Frontend Developer &amp; UI/UX Designer</title>
+        <description>Creating digital experiences that blend the functionality with beautiful designs. Passionate about clean code, user experience, and innovative solutions.</description>
+    </personal>
+    <about>
+        <text>Hello! I'm Kim Francis Villavicencio, a passionate frontend developer and UI/UX designer based in Tarlac City, Tarlac. With a strong foundation in web technologies and a keen eye for design, I specialize in creating engaging and user-friendly digital experiences. My journey in tech began during my studies at Tarlac State University, where I honed my skills in web and mobile application development. I thrive on solving complex problems and transforming ideas into functional, aesthetically pleasing interfaces. When I'm not coding, you'll find me exploring the latest design trends, cycling through scenic routes, or diving into a good book. I'm always eager to learn and grow, both personally and professionally. Feel free to explore my portfolio and get in touch if you'd like to collaborate!</text>
+        <image>Mik.jpg</image>
+    </about>
+    <education>
+        <item>
+            <date>2022 - Present</date>
+            <degree>Bachelor of Science in Information Technology Specialized in Web and Mobile Application</degree>
+            <institution>Tarlac State University</institution>
+            <description>Currently pursuing a degree with a focus on web and mobile application development. Engaged in various projects and internships to enhance practical skills.</description>
+        </item>
+        <item>
+            <date>2020 - 2022</date>
+            <degree>Technical Vocational Livelihood - Information and Communication Technology</degree>
+            <institution>AMA Computer College - Tarlac Campus</institution>
+            <description>Completed a comprehensive program covering essential IT skills, including programming, networking, and system administration.</description>
+        </item>
+        <item>
+            <date>2016 - 2020</date>
+            <degree>High School Diploma</degree>
+            <institution>San Sebastian Cathedral School - Tarlac City</institution>
+            <description></description>
+        </item>
+    </education>
+    <skills>
+        <category>
+            <name>Frontend Development</name>
+            <items>
+                <item>HTML</item>
+                <item>CSS</item>
+                <item>JavaScript</item>
+                <item>React.js</item>
+                <item>TypeScript</item>
+            </items>
+        </category>
+        <category>
+            <name>UI/UX Design</name>
+            <items>
+                <item>Figma</item>
+                <item>Adobe XD</item>
+                <item>User Research</item>
+                <item>Wireframing</item>
+                <item>Prototyping</item>
+            </items>
+        </category>
+        <category>
+            <name>Tools &amp; Technologies</name>
+            <items>
+                <item>Git</item>
+                <item>GitHub</item>
+                <item>Webpack &amp; Vite</item>
+                <item>Jest &amp; Testing Library</item>
+                <item>Firebase</item>
+            </items>
+        </category>
+    </skills>
+    <hobbies>
+        <hobby>
+            <icon>🎲</icon>
+            <name>Playing Games</name>
+            <description>Enjoying a variety of video games, from immersive RPGs to competitive multiplayer games, as a way to relax and unwind.</description>
+        </hobby>
+        <hobby>
+            <icon>📷</icon>
+            <name>Photography</name>
+            <description>Capturing moments and exploring creativity through photography, focusing on landscapes, portraits, and urban scenes.</description>
+        </hobby>
+        <hobby>
+            <icon>🚗</icon>
+            <name>Travel</name>
+            <description>Exploring new places and cultures, both locally and internationally, to broaden perspectives and gain inspiration.</description>
+        </hobby>
+    </hobbies>
+    <contact>
+        <intro>I'm always interested in new opportunities and collaborations. Feel free to reach out!</intro>
+        <items>
+            <item type="Location">Tarlac City, Tarlac, Philippines</item>
+            <item type="Email">miksancec5@gmail.com</item>
+            <item type="Phone">+63 969 104 5530</item>
+            <item type="Github">https://github.com/mikcisfran</item>
+            <item type="Facebook">https://www.facebook.com/Ishigami.Yu15</item>
+            <item type="Instagram">https://www.instagram.com/cisfranmik/</item>
+        </items>
+    </contact>
+</portfolio>
