@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="delacruz_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="delacruz_schema.xsd">
+    
+  <home>
+    <hero>
+      <name> John Carlo H. Dela Cruz </name>
+      <detail> Student </detail>
+    </hero>
+  </home>
+  <about>
+    <content>Hello, I am John Carlo H. Dela Cruz, a 22-year-old boy who is exploring himself. I am on a journey to understand who I truly am—what I love, what I want, and what makes me unique.</content>
+  </about>
+  <resume>
+    <educationalBackground>
+      <ul>
+        <li>San Jose Elementary School (2010 – 2016)</li>
+        <li>San Manuel High School (2016 – 2020)</li>
+        <li>San Manuel High School (2020 – 2022)</li>
+      </ul>
+    </educationalBackground>
+    <hobbies>
+      <title>Hobbies</title>
+      <ul>
+        <li>Gaming</li>
+        <li>Reading Manhwa</li>
+        <li>Watching Movies and Anime </li>
+      </ul>
+    </hobbies>
+  </resume>
+</portfolio>
