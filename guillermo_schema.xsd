@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="portfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="metadata" type="MetadataType" />
+        <xs:element name="personal" type="PersonalType" />
+        <xs:element name="education" type="EducationType" />
+        <xs:element name="skills" type="SkillsType" />
+        <xs:element name="interests" type="InterestsType" />
+        <xs:element name="social" type="SocialType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="MetadataType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="description" type="xs:string" />
+      <xs:element name="year" type="xs:integer" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PersonalType">
+    <xs:sequence>
+      <xs:element name="firstName" type="xs:string" />
+      <xs:element name="lastName" type="xs:string" />
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="tagline" type="xs:string" />
+      <xs:element name="location" type="xs:string" />
+      <xs:element name="contact">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="email" type="xs:string" />
+            <xs:element name="phone" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="availability" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EducationType">
+    <xs:sequence>
+      <xs:element name="degree">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="level" type="xs:string" />
+            <xs:element name="specialization" type="xs:string" />
+            <xs:element name="school" type="xs:string" />
+            <xs:element name="location" type="xs:string" />
+            <xs:element name="period" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="highSchool">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="school" type="xs:string" />
+            <xs:element name="period" type="xs:string" />
+            <xs:element name="location" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="elementary">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="school" type="xs:string" />
+            <xs:element name="period" type="xs:string" />
+            <xs:element name="location" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SkillsType">
+    <xs:sequence>
+      <xs:element name="technical">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="skill" type="xs:string" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="software">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="tool" type="xs:string" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="languages">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="language" type="xs:string" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InterestsType">
+    <xs:sequence>
+      <xs:element name="interest" type="xs:string" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SocialType">
+    <xs:sequence>
+      <xs:element name="link" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="platform" type="xs:string" minOccurs="0" />
+            <xs:element name="url" type="xs:string" minOccurs="0" />
+            <xs:element name="label" type="xs:string" minOccurs="0" />
+          </xs:sequence>
+          <xs:attribute name="platform" type="xs:string" />
+          <xs:attribute name="url" type="xs:string" />
+          <xs:attribute name="label" type="xs:string" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
