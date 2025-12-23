@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="header" type="headerType"/>
+                <xs:element name="sections" type="sectionsType"/>
+                <xs:element name="footer" type="footerType"/>
+                <xs:element name="assets" type="assetsType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="headerType">
+        <xs:sequence>
+            <xs:element name="logo" type="xs:string"/>
+            <xs:element name="navLinks">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="link" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:attribute name="href" type="xs:string" use="required"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="sectionsType">
+        <xs:sequence>
+            <xs:element name="section" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:sequence> <!-- About section -->
+                            <xs:element name="profilePic">
+                                <xs:complexType>
+                                    <xs:attribute name="src" type="xs:string" use="required"/>
+                                    <xs:attribute name="alt" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="text" type="textType"/>
+                        </xs:sequence>
+                        <xs:sequence> <!-- Skills section -->
+                            <xs:element name="heading" type="xs:string"/>
+                            <xs:element name="skillsGrid">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="skill" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:sequence> <!-- Projects section -->
+                            <xs:element name="heading" type="xs:string"/>
+                            <xs:element name="projectsGrid">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="project" type="projectType" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:sequence> <!-- Contact section -->
+                            <xs:element name="heading" type="xs:string"/>
+                            <xs:element name="contactInfo" type="contactType"/>
+                        </xs:sequence>
+                    </xs:choice>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="textType">
+        <xs:sequence>
+            <xs:element name="heading" type="xs:string"/>
+            <xs:element name="paragraph" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="projectType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="contactType">
+        <xs:sequence>
+            <xs:element name="email" type="xs:string">
+                <xs:complexType>
+                    <xs:attribute name="href" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="github" type="xs:string">
+                <xs:complexType>
+                    <xs:attribute name="href" type="xs:string" use="required"/>
+                    <xs:attribute name="target" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="footerType">
+        <xs:sequence>
+            <xs:element name="copyright" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="assetsType">
+        <xs:sequence>
+            <xs:element name="stylesheet">
+                <xs:complexType>
+                    <xs:attribute name="href" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="script">
+                <xs:complexType>
+                    <xs:attribute name="src" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
