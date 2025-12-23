@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="studentProfile">
+    <xsd:complexType>
+      <xsd:sequence>
+
+        <xsd:element name="info">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="fullName" type="xsd:string"/>
+              <xsd:element name="course" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <xsd:element name="profileSummary" type="xsd:string"/>
+
+        <xsd:element name="academicBackground">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="school" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="institution" type="xsd:string"/>
+                    <xsd:element name="year" type="xsd:string"/>
+                  </xsd:sequence>
+                  <xsd:attribute name="level" type="xsd:string" use="required"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <xsd:element name="competencies">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="skill" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:simpleContent>
+                    <xsd:extension base="xsd:string">
+                      <xsd:attribute name="category" type="xsd:string" use="required"/>
+                    </xsd:extension>
+                  </xsd:simpleContent>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <xsd:element name="projects">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="project" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="title" type="xsd:string"/>
+                    <xsd:element name="tools" type="xsd:string"/>
+                    <xsd:element name="summary" type="xsd:string"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <xsd:element name="reachMe">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="email" type="xsd:string"/>
+              <xsd:element name="phone" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
