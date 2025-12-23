@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="StudentType"/>
+                <xs:element name="academicInfo" type="AcademicInfoType"/>
+                <xs:element name="projects" type="ProjectsType"/>
+                <xs:element name="skills" type="SkillsType"/>
+                <xs:element name="achievements" type="AchievementsType"/>
+                <xs:element name="extracurricular" type="ExtracurricularType"/>
+                <xs:element name="aboutMe" type="AboutMeType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="StudentType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="program" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AcademicInfoType">
+        <xs:sequence>
+            <xs:element name="gpa" type="GPAType"/>
+            <xs:element name="academicYear" type="xs:string"/>
+            <xs:element name="semester" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="GPAType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="5.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="ProjectsType">
+        <xs:sequence>
+            <xs:element name="project" type="ProjectType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ProjectType">
+        <xs:sequence>
+            <xs:element name="projectTitle" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="technologies" type="xs:string"/>
+            <xs:element name="dateCompleted" type="xs:string"/>
+            <xs:element name="projectURL" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SkillsType">
+        <xs:sequence>
+            <xs:element name="skillCategory" type="SkillCategoryType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SkillCategoryType">
+        <xs:sequence>
+            <xs:element name="skill" type="SkillType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="SkillType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="level" type="SkillLevelType" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="SkillLevelType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Beginner"/>
+            <xs:enumeration value="Intermediate"/>
+            <xs:enumeration value="Advanced"/>
+            <xs:enumeration value="Expert"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="AchievementsType">
+        <xs:sequence>
+            <xs:element name="achievement" type="AchievementType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AchievementType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="date" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ExtracurricularType">
+        <xs:sequence>
+            <xs:element name="activity" type="ActivityType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ActivityType">
+        <xs:sequence>
+            <xs:element name="activityName" type="xs:string"/>
+            <xs:element name="role" type="xs:string"/>
+            <xs:element name="duration" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- About Me Type -->
+    <xs:complexType name="AboutMeType">
+        <xs:sequence>
+            <xs:element name="fact" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
