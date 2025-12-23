@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="melu_transform.xsl"?>
+<studentPortfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="melu_schema.xsd">
+
+    <personalInfo>
+        <fullName>Jonathan C. Melu</fullName>
+        <lastName>Melu</lastName>
+        <country>Philippines</country>
+        <program>BSIT – Web and Mobile Application (BSIT-WMA)</program>
+        <yearLevel>4th Year</yearLevel>
+    </personalInfo>
+
+    <education>
+        <degree>
+            <title>Bachelor of Science in Information Technology</title>
+            <major>Web and Mobile Application</major>
+            <institution>Tarlac State University, San Isidro, Tarlac City</institution>
+            <status>Ongoing</status>
+            <years>2022–Present</years>
+        </degree>
+
+        <educationHistory>
+            <level>
+                <name>Senior High School</name>
+                <school>Capas National High School, Dolores, Capas, Tarlac</school>
+                <years>2020–2022</years>
+            </level>
+            <level>
+                <name>Junior High School</name>
+                <school>Capas National High School, Dolores, Capas, Tarlac</school>
+                <years>2016–2020</years>
+            </level>
+            <level>
+                <name>Elementary School</name>
+                <school>Goshen Christian School, Estrada, Capas, Tarlac</school>
+                <years>2011–2016</years>
+            </level>
+        </educationHistory>
+    </education>
+
+    <skills>
+        <skill>
+            <name>JavaScript / TypeScript</name>
+            <category>Programming</category>
+        </skill>
+        <skill>
+            <name>React with Ionic &amp; Capacitor</name>
+            <category>Frontend &amp; Mobile</category>
+        </skill>
+        <skill>
+            <name>Node.js &amp; Express.js</name>
+            <category>Backend</category>
+        </skill>
+        <skill>
+            <name>FastAPI (Python)</name>
+            <category>Backend / Services</category>
+        </skill>
+        <skill>
+            <name>PostgreSQL &amp; Supabase</name>
+            <category>Database &amp; Authentication</category>
+        </skill>
+        <skill>
+            <name>Mapbox APIs (Directions, Maps)</name>
+            <category>Mapping &amp; Routing</category>
+        </skill>
+        <skill>
+            <name>REST API Design</name>
+            <category>Backend</category>
+        </skill>
+    </skills>
+
+    <projects>
+        <project>
+            <name>SyncRunize</name>
+            <type>Capstone Project</type>
+            <role>Full-Stack Developer</role>
+            <description>
+                A safety-aware running companion app for web and Android using Ionic React
+                and Capacitor. It provides route planning, run tracking, and social features
+                for runners.
+            </description>
+            <technologies>
+                <technology>Ionic</technology>
+                <technology>React</technology>
+                <technology>Capacitor</technology>
+                <technology>Node.js</technology>
+                <technology>Express.js</technology>
+                <technology>FastAPI</technology>
+                <technology>PostgreSQL</technology>
+                <technology>Supabase</technology>
+                <technology>Mapbox Directions API</technology>
+                <technology>Mapbox Maps</technology>
+            </technologies>
+        </project>
+    </projects>
+
+    <about>
+        Hi! I’m Jonathan, an aspiring cloud engineer and full-stack developer with a growing focus on scalable systems,
+        cloud technologies, and modern API-driven architectures. I’m passionate about building secure, efficient, and reliable
+        applications, and I aim to contribute to the development of responsible, impactful solutions that leverage cloud and
+        emerging technologies. My goal is to design cloud infrastructures that empower data-driven systems and support real-world,
+        high-value use cases.
+
+        Right now, most of my strengths are in frontend development, and I’m actively learning the backend and cloud technologies
+        needed to advance toward my goal. I’m committed to continuous improvement and building a strong foundation to become a skilled
+        cloud engineer in the future.
+    </about>
+
+</studentPortfolio>

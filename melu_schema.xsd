@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+
+    <xs:element name="studentPortfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personalInfo" type="personalInfoType"/>
+                <xs:element name="education" type="educationType"/>
+                <xs:element name="skills" type="skillsType"/>
+                <xs:element name="projects" type="projectsType"/>
+                <xs:element name="about" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="personalInfoType">
+        <xs:sequence>
+            <xs:element name="fullName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="country" type="xs:string"/>
+            <xs:element name="program" type="xs:string"/>
+            <xs:element name="yearLevel" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="educationType">
+        <xs:sequence>
+            <xs:element name="degree" type="degreeType" maxOccurs="unbounded"/>
+            <xs:element name="educationHistory" type="educationHistoryType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="degreeType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="major" type="xs:string" minOccurs="0"/>
+            <xs:element name="institution" type="xs:string" minOccurs="0"/>
+            <xs:element name="status" type="xs:string"/>
+            <xs:element name="years" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="educationHistoryType">
+        <xs:sequence>
+            <xs:element name="level" type="levelType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="levelType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="school" type="xs:string"/>
+            <xs:element name="years" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="skillsType">
+        <xs:sequence>
+            <xs:element name="skill" type="skillType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="skillType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="category" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="projectsType">
+        <xs:sequence>
+            <xs:element name="project" type="projectType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="projectType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="role" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="technologies" type="techListType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="techListType">
+        <xs:sequence>
+            <xs:element name="technology" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
