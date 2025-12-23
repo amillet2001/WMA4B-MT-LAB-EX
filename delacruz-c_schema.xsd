@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="myPortfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personalInfo" type="personalInfoType"/>
+                <xs:element name="hobbies" type="hobbiesType"/>
+                <xs:element name="mySkills" type="skillsType"/>
+                <xs:element name="educationalBackground" type="educationBackgroundType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="personalInfoType">
+        <xs:sequence>
+            <xs:element name="fullName" type="xs:string"/>
+            <xs:element name="phoneNum" type="xs:string"/>
+            <xs:element name="birthDate" type="xs:string"/>
+            <xs:element name="place" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="course" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="hobbiesType">
+        <xs:sequence>
+            <xs:element name="hobby" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="skillsType">
+        <xs:sequence>
+            <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="educationBackgroundType">
+        <xs:sequence>
+            <xs:element name="education" type="educationType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="educationType">
+        <xs:sequence>
+            <xs:element name="level" type="xs:string"/>
+            <xs:element name="schoolName" type="xs:string"/>
+            <xs:element name="yearGraduated" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

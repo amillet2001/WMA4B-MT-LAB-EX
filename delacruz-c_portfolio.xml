@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="delacruz-c_transform.xsl" type="text/xsl"?>
+
+<myPortfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="delacruz-c_schema.xsd">
+
+    <personalInfo>
+      <fullName>Christian Dela Cruz</fullName>
+      <phoneNum>09763094881</phoneNum>
+      <birthDate>May 18 2002</birthDate>
+      <place>Tarlac City, Tarlac</place>
+      <email>delacruz131@gmail.com</email>
+      <course>BSIT Specialized in Network Administration</course>
+    </personalInfo>
+
+    <hobbies>
+      <hobby>Playing Video Games</hobby>
+      <hobby>Watching Movies/Series</hobby>
+      <hobby>Editing Videos/Photos</hobby>
+      <hobby>Playing Guitar</hobby>
+    </hobbies>
+
+    <mySkills>
+      <skill>HTML</skill>
+      <skill>CSS</skill>
+      <skill>Video Editing</skill>
+      <skill>Photo Editing</skill>
+      <skill>Web Design</skill>
+      <skill>Networking</skill>
+    </mySkills>
+
+    <educationalBackground>
+      <education>
+        <level>Senior High School</level>
+        <schoolName>Tarlac State University - Senior High School</schoolName>
+        <yearGraduated>2020</yearGraduated>
+      </education>
+      <education>
+        <level>College</level>
+        <schoolName>Tarlac State University - College of Computer Studies</schoolName>
+        <yearGraduated>Present</yearGraduated>
+      </education>
+    </educationalBackground>
+
+
+</myPortfolio>
