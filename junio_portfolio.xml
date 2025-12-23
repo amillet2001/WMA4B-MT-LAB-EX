@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="junio_transform.xsl"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="junio_schema.xsd">
+    
+    <student>
+        <personalInfo>
+            <firstName>Hanie Fe Marie C.</firstName>
+            <lastName>Junio</lastName>
+            <studentID>Student ID: 2022300396</studentID>
+            <email>hfm.junio00396@tsu.edu.ph</email>
+            <phone>+63-930-315-9167</phone>
+        </personalInfo>
+        
+        <education>
+            <institution>Tarlac State University</institution>
+            <program>Bachelor of Science in Information Technology</program>
+            <yearLevel>4th Year</yearLevel>
+
+        </education>
+        
+        <skills>
+            <skill category="Programming">
+                <n>TypeScript</n>
+                <proficiency>Beginner</proficiency>
+            </skill>
+            <skill category="Programming">
+                <n>React</n>
+                <proficiency>Beginner</proficiency>
+            </skill>
+            <skill category="Backend">
+                <n>Firebase</n>
+                <proficiency>Intermediate</proficiency>
+            </skill>
+        </skills>
+        
+        <projects>
+            <project>
+                <title>CP2 - Reflectify</title>
+                <description>Educational platform with automatic flashcard generation using OpenAI API</description>
+                <technologies>React, TypeScript, Firebase, Capacitor, OpenAI API</technologies>
+                <role>Full-Stack Developer</role>
+                <status>Finished</status>
+                <year>2024-2025</year>
+            </project>
+        </projects>
+        
+        <interests>
+            <interest>Art Creation</interest>
+            <interest>Video Games</interest>
+            <interest>Dancing</interest>
+        </interests>
+    </student>
+    
+</portfolio>
